@@ -2,19 +2,19 @@
 
 ##Facebook Group Crawler
 
-[fb-hfc](https://github.com/prili/fb-hfc)를 참조하여 작성하였습니다.
-우분투 및 OSX 에서만 작동하는 것을 확인했습니다.
+[fb-hfc](https://github.com/prili/fb-hfc)它有看的權利。
+我發現它只適用於Ubuntu和OSX。
 
-## 설치
+## 安裝
 
 ``` bash
 apt-get install python-lxml
 pip install -r requirements.txt
 ```
 
-## 실행
+## 執行
 
-### 직접 실행
+### 直接執行
 
 ```python
 python fb-hfc.py -username '<username>'  -password '<password>' -query '<graph search query>' -group <name=url=id>
@@ -23,11 +23,11 @@ python fb-hfc.py -username '<username>'  -password '<password>' -query '<graph s
 username: Facebook ID
 password: Facebook PW
 query : Member
-group : 그룹별명=그룹주소=그룹ID
+group : 組別名=組地址=組ID
 
-그룹 아이디는 [Lookup-ID](http://lookup-id.com)라는 사이트를 이용할 수 있습니다.
+組ID [Lookup-ID](http://lookup-id.com)你可以使用一個調用的站點。
 
-### Shell을 통한 실행
+### Shell穿過
 
 ```bash
 #!/bin/bash
@@ -51,13 +51,13 @@ done
 username: Facebook ID
 password: Facebook PW
 
-상단의 값을 입력 후 하위폴더 source에 그룹의 리스트를
+在頂部輸入值後，子文件夾源中的組列表
 
 	name=url=id
 	name=url=id
 
-와 같이 작성하면 됩니다.
+如下圖所示。
 
-## 한계
+## 餘量
 
-멤버수가 8000~9000명인 그룹의 경우 데이터가 정확하지 않으며, 9000명이상인 그룹에서는 그 이상의 데이터를 가져올 수가 없습니다.
+會員人數 8000~9000對於主組，數據不准確, 9000擁有多個人的群組無法獲取更多數據。

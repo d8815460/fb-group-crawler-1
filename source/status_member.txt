@@ -1,4 +1,4 @@
-[          Group Name] : 생활코딩
+[          Group Name] : 生命編碼
 [           Group URL] : codingeverybody
 [            Group Id] : 174499879257223
 [          Start Time] : Thu May  7 13:39:54 2015
